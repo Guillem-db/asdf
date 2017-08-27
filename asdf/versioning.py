@@ -152,9 +152,9 @@ class VersionedMixin(object):
         if version not in supported_versions:
             human_versions = util.human_list(
                 [str(x) for x in supported_versions])
-            raise ValueError(
-                "asdf only understands how to handle ASDF versions {0}. "
-                "Got '{1}'".format(human_versions, version))
+            #raise ValueError(
+            #    "asdf only understands how to handle ASDF versions {0}. "
+            #    "Got '{1}'".format(human_versions, version))
 
         self._version = version
 
